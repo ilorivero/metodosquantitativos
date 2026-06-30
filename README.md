@@ -1,8 +1,14 @@
 # Métodos Quantitativos e Estatística — PPG Dataset
 
-Este subdiretório `/metodosquantitativos` reúne scripts Python independentes desenvolvidos para a aplicação prática de técnicas de estatística multivariada, álgebra linear computacional e modelagem preditiva sobre o **Photoplethysmography (PPG) Dataset** (`PPG_Dataset.csv`).
+Este repositório reúne scripts Python independentes desenvolvidos para a aplicação prática de técnicas de estatística multivariada, álgebra linear computacional e modelagem preditiva sobre o **Photoplethysmography (PPG) Dataset** (`PPG_Dataset.csv`), dataset disponível em:
+https://www.kaggle.com/datasets/ucimachinelearning/photoplethysmography-ppg-dataset/. 
 
-Cada algoritmo serve a um propósito específico de exploração, compressão ou classificação diagnóstica de sinais fisiológicos.
+O conjunto de dados é uma série temporal de sinais fisiológicos obtidos por um sensor PPG (fotopletismografia). O objetivo é classificar cada intervalo de tempo como indicativo de um estado fisiológico normal ou de um infarto do miocárdio (IM), sendo essa uma tarefa de classificação binária. 
+Os sinais de fotopletismografia (PPG) são usados para monitorar a frequência cardíaca e outros parâmetros fisiológicos. 
+
+Cada linha do conjunto de dados representa um ponto específico no tempo ou uma medição. O conjunto de dados contém múltiplas características que representam a amplitude do sinal PPG em vários pontos no tempo. Nessa base de dados, foram capturados 2576 registros em 2000 intervalos de tempo, representando as amplitudes cardíacas ao longo do tempo.  
+
+
 
 ---
 
@@ -59,7 +65,7 @@ pip install numpy pandas scipy matplotlib seaborn scikit-learn
 ```
 
 ### Execução dos Algoritmos
-Todos os scripts assumem que o dataset `PPG_Dataset.csv` está localizado na pasta raiz do projeto (uma pasta acima deste subdiretório). Garanta que está executando a partir da pasta raiz ou diretamente de dentro da pasta `metodosquantitativos`:
+Todos os scripts assumem que o dataset `PPG_Dataset.csv` está localizado localmente no mesmo subdiretório `metodosquantitativos`. Execute os scripts diretamente de dentro desta pasta:
 
 ```bash
 # Estando dentro do diretório /metodosquantitativos:
